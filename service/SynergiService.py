@@ -14,8 +14,8 @@ from domain.domain import SynergiVerificationRequest, SynergiVerificationValue
 
 class SynergiService():
     def __init__(self):
-        self.path_encoder = "/Users/marcin/Documents/GitHub/synergi_input_validator/artifacts/synergi_input_encoder.pkl"
-        self.path_model = "/Users/marcin/Documents/GitHub/synergi_input_validator/artifacts/RandomForestRegressor_For_Synergi.pkl"
+        self.path_encoder = "artifacts/synergi_input_encoder.pkl"
+        self.path_model = "artifacts/RandomForestRegressor_For_Synergi.pkl"
         self.model = self.load_artifact(self.path_model)
         self.le = self.load_artifact(self.path_encoder)
 
